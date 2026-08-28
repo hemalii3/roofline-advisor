@@ -1,0 +1,6 @@
+# name,peak_gflops,peak_bandwidth_gbs,pcie_gbps
+# Fill these in from benchmarks/compute_bound and benchmarks/bandwidth_bound output.
+# pcie_gbps = 0 for the host/CPU device (no transfer needed).
+# TODO: replace placeholder values below with real measurements from exa03.
+cpu,164.15,51.0,0
+gpu,7000.0,900.0,16.0

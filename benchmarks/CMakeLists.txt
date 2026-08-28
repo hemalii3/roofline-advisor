@@ -1,0 +1,11 @@
+add_executable(compute_bound compute_bound.cpp)
+target_link_libraries(compute_bound PRIVATE Threads::Threads)
+if(OpenMP_CXX_FOUND)
+  target_link_libraries(compute_bound PRIVATE OpenMP::OpenMP_CXX)
+endif()
+
+add_executable(bandwidth_bound bandwidth_bound.cpp)
+target_link_libraries(bandwidth_bound PRIVATE Threads::Threads)
+if(OpenMP_CXX_FOUND)
+  target_link_libraries(bandwidth_bound PRIVATE OpenMP::OpenMP_CXX)
+endif()

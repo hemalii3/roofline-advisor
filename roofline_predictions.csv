@@ -1,0 +1,6 @@
+kernel,arithmetic_intensity,cpu_gflops,gpu_gflops,naive_crossover_n,naive_status,amortized_crossover_n,amortized_status,reuse_count
+for_each,0.125,6.375,112.5,0,never,1000,always,10
+reduce,0.125,6.375,112.5,0,never,1000,always,10
+find,0,0,0,0,never,0,never,10
+sort,0.416667,21.25,375,0,never,1000,always,10
+inc_scan,0.0625,3.1875,56.25,0,never,1000,always,10

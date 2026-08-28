@@ -1,0 +1,11 @@
+kernel,device,gflops
+find,gpu,0.0
+find,cpu,0.0
+for_each,gpu,1.753655014398595
+for_each,cpu,7.98956267725484
+inc_scan,gpu,0.4469422660965109
+inc_scan,cpu,1.7812197996353276
+reduce,gpu,3.2073694893132223
+reduce,cpu,21.195265723737645
+sort,gpu,0.9571722462575382
+sort,cpu,0.763041153829471

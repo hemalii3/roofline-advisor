@@ -1,0 +1,11 @@
+# name,flops_per_elem,bytes_per_elem,transfer_bytes_per_elem
+# flops_per_elem, bytes_per_elem: derived analytically per algorithm (see docs/kernel_profiles.md)
+# transfer_bytes_per_elem: bytes that must cross PCIe per input element (in + out, amortized)
+#
+# TODO: these are placeholder estimates -- work through docs/kernel_profiles.md
+# and replace with your derived values, cross-checked against P1 data.
+for_each,2.0,16.0,8.0
+reduce,1.0,8.0,8.03
+find,0.0,8.0,8.03
+sort,10.0,24.0,16.0
+inc_scan,1.0,16.0,16.0

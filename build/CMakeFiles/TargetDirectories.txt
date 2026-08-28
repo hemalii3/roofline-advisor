@@ -1,0 +1,9 @@
+/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/edit_cache.dir
+/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/rebuild_cache.dir
+/home/hemali/rooflineadvisor/roofline-advisor/build/benchmarks/CMakeFiles/compute_bound.dir
+/home/hemali/rooflineadvisor/roofline-advisor/build/benchmarks/CMakeFiles/bandwidth_bound.dir
+/home/hemali/rooflineadvisor/roofline-advisor/build/benchmarks/CMakeFiles/edit_cache.dir
+/home/hemali/rooflineadvisor/roofline-advisor/build/benchmarks/CMakeFiles/rebuild_cache.dir
+/home/hemali/rooflineadvisor/roofline-advisor/build/src/CMakeFiles/predict.dir
+/home/hemali/rooflineadvisor/roofline-advisor/build/src/CMakeFiles/edit_cache.dir
+/home/hemali/rooflineadvisor/roofline-advisor/build/src/CMakeFiles/rebuild_cache.dir

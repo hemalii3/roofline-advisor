@@ -1,0 +1,557 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 3.10.0-1127.19.1.el7.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/3.30.5/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-UNjv6D"
+      binary: "/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-UNjv6D"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-UNjv6D'
+        
+        Run Build Command(s): /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/bin/cmake -E env VERBOSE=1 /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gmake-4.4.1-eynjberzbesr5g7qmzjc3x5wfy2ryasb/bin/gmake -f Makefile cmTC_006f4/fast
+        /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gmake-4.4.1-eynjberzbesr5g7qmzjc3x5wfy2ryasb/bin/gmake  -f CMakeFiles/cmTC_006f4.dir/build.make CMakeFiles/cmTC_006f4.dir/build
+        gmake[1]: Entering directory '/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-UNjv6D'
+        Building CXX object CMakeFiles/cmTC_006f4.dir/CMakeCXXCompilerABI.cpp.o
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++   -v -MD -MT CMakeFiles/cmTC_006f4.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_006f4.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_006f4.dir/CMakeCXXCompilerABI.cpp.o -c /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+        clang version 17.0.6
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin
+        Configuration file: /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++.cfg
+        Selected GCC installation: /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+        Found CUDA installation: /usr/local/cuda-12.3, version 
+         (in-process)
+         "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang-17" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-UNjv6D -resource-dir /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17 -dependency-file CMakeFiles/cmTC_006f4.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_006f4.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0 -internal-isystem /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/x86_64-pc-linux-gnu -internal-isystem /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/backward -internal-isystem /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-UNjv6D -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_006f4.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 17.0.6 based upon LLVM 17.0.6 default target x86_64-unknown-linux-gnu
+        ignoring nonexistent directory "/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../x86_64-pc-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0
+         /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/x86_64-pc-linux-gnu
+         /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/backward
+         /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        Linking CXX executable cmTC_006f4
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/bin/cmake -E cmake_link_script CMakeFiles/cmTC_006f4.dir/link.txt --verbose=1
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++  -v -Wl,-v CMakeFiles/cmTC_006f4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_006f4
+        clang version 17.0.6
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin
+        Configuration file: /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++.cfg
+        Selected GCC installation: /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+        Found CUDA installation: /usr/local/cuda-12.3, version 
+         "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/binutils-2.43.1-wqiqgjbqza7xkq3qqwofkejr3l76yrox/bin/ld" -pie --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_006f4 /lib/../lib64/Scrt1.o /lib/../lib64/crti.o /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtbeginS.o -L/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/../lib/x86_64-unknown-linux-gnu -L/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/lib/x86_64-unknown-linux-gnu -L/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0 -L/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_006f4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtendS.o /lib/../lib64/crtn.o
+        GNU ld (GNU Binutils) 2.43.1
+        gmake[1]: Leaving directory '/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-UNjv6D'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0]
+          add: [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/x86_64-pc-linux-gnu]
+          add: [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/backward]
+          add: [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0] ==> [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/include/c++/9.5.0]
+        collapse include dir [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/x86_64-pc-linux-gnu] ==> [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/include/c++/9.5.0/x86_64-pc-linux-gnu]
+        collapse include dir [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/backward] ==> [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/include/c++/9.5.0/backward]
+        collapse include dir [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/include] ==> [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/include/c++/9.5.0;/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/include/c++/9.5.0/x86_64-pc-linux-gnu;/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/include/c++/9.5.0/backward;/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-UNjv6D']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/bin/cmake -E env VERBOSE=1 /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gmake-4.4.1-eynjberzbesr5g7qmzjc3x5wfy2ryasb/bin/gmake -f Makefile cmTC_006f4/fast]
+        ignore line: [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gmake-4.4.1-eynjberzbesr5g7qmzjc3x5wfy2ryasb/bin/gmake  -f CMakeFiles/cmTC_006f4.dir/build.make CMakeFiles/cmTC_006f4.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-UNjv6D']
+        ignore line: [Building CXX object CMakeFiles/cmTC_006f4.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++   -v -MD -MT CMakeFiles/cmTC_006f4.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_006f4.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_006f4.dir/CMakeCXXCompilerABI.cpp.o -c /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang version 17.0.6]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin]
+        ignore line: [Configuration file: /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++.cfg]
+        ignore line: [Selected GCC installation: /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found CUDA installation: /usr/local/cuda-12.3  version ]
+        ignore line: [ (in-process)]
+        ignore line: [ "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang-17" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-UNjv6D -resource-dir /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17 -dependency-file CMakeFiles/cmTC_006f4.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_006f4.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0 -internal-isystem /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/x86_64-pc-linux-gnu -internal-isystem /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/backward -internal-isystem /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-UNjv6D -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_006f4.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 17.0.6 based upon LLVM 17.0.6 default target x86_64-unknown-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0]
+        ignore line: [ /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/x86_64-pc-linux-gnu]
+        ignore line: [ /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/backward]
+        ignore line: [ /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_006f4]
+        ignore line: [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/bin/cmake -E cmake_link_script CMakeFiles/cmTC_006f4.dir/link.txt --verbose=1]
+        ignore line: [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++  -v -Wl -v CMakeFiles/cmTC_006f4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_006f4]
+        ignore line: [clang version 17.0.6]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin]
+        ignore line: [Configuration file: /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++.cfg]
+        ignore line: [Selected GCC installation: /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found CUDA installation: /usr/local/cuda-12.3  version ]
+        link line: [ "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/binutils-2.43.1-wqiqgjbqza7xkq3qqwofkejr3l76yrox/bin/ld" -pie --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_006f4 /lib/../lib64/Scrt1.o /lib/../lib64/crti.o /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtbeginS.o -L/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/../lib/x86_64-unknown-linux-gnu -L/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/lib/x86_64-unknown-linux-gnu -L/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0 -L/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_006f4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtendS.o /lib/../lib64/crtn.o]
+          arg [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/binutils-2.43.1-wqiqgjbqza7xkq3qqwofkejr3l76yrox/bin/ld] ==> ignore
+          arg [-pie] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_006f4] ==> ignore
+          arg [/lib/../lib64/Scrt1.o] ==> obj [/lib/../lib64/Scrt1.o]
+          arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+          arg [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtbeginS.o] ==> obj [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtbeginS.o]
+          arg [-L/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/../lib/x86_64-unknown-linux-gnu] ==> dir [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/../lib/x86_64-unknown-linux-gnu]
+          arg [-L/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/lib/x86_64-unknown-linux-gnu] ==> dir [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/lib/x86_64-unknown-linux-gnu]
+          arg [-L/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0] ==> dir [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0]
+          arg [-L/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64] ==> dir [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_006f4.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtendS.o] ==> obj [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtendS.o]
+          arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+        linker tool for 'CXX': /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/binutils-2.43.1-wqiqgjbqza7xkq3qqwofkejr3l76yrox/bin/ld
+        collapse obj [/lib/../lib64/Scrt1.o] ==> [/lib64/Scrt1.o]
+        collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+        collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+        collapse library dir [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/../lib/x86_64-unknown-linux-gnu] ==> [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/x86_64-unknown-linux-gnu]
+        collapse library dir [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/lib/x86_64-unknown-linux-gnu] ==> [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/lib/x86_64-unknown-linux-gnu]
+        collapse library dir [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0] ==> [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0]
+        collapse library dir [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64] ==> [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib64/Scrt1.o;/lib64/crti.o;/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtbeginS.o;/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtendS.o;/lib64/crtn.o]
+        implicit dirs: [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/x86_64-unknown-linux-gnu;/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/lib/x86_64-unknown-linux-gnu;/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0;/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib64;/lib64;/usr/lib64;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/binutils-2.43.1-wqiqgjbqza7xkq3qqwofkejr3l76yrox/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.43.1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:14 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-YahNnT"
+      binary: "/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-YahNnT"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-YahNnT'
+        
+        Run Build Command(s): /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/bin/cmake -E env VERBOSE=1 /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gmake-4.4.1-eynjberzbesr5g7qmzjc3x5wfy2ryasb/bin/gmake -f Makefile cmTC_de152/fast
+        /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gmake-4.4.1-eynjberzbesr5g7qmzjc3x5wfy2ryasb/bin/gmake  -f CMakeFiles/cmTC_de152.dir/build.make CMakeFiles/cmTC_de152.dir/build
+        gmake[1]: Entering directory '/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-YahNnT'
+        Building CXX object CMakeFiles/cmTC_de152.dir/src.cxx.o
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -MD -MT CMakeFiles/cmTC_de152.dir/src.cxx.o -MF CMakeFiles/cmTC_de152.dir/src.cxx.o.d -o CMakeFiles/cmTC_de152.dir/src.cxx.o -c /home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-YahNnT/src.cxx
+        Linking CXX executable cmTC_de152
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de152.dir/link.txt --verbose=1
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++ CMakeFiles/cmTC_de152.dir/src.cxx.o -o cmTC_de152
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/binutils-2.43.1-wqiqgjbqza7xkq3qqwofkejr3l76yrox/bin/ld: CMakeFiles/cmTC_de152.dir/src.cxx.o: in function `main':
+        src.cxx:(.text+0x22): undefined reference to `pthread_create'
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/binutils-2.43.1-wqiqgjbqza7xkq3qqwofkejr3l76yrox/bin/ld: src.cxx:(.text+0x2b): undefined reference to `pthread_detach'
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/binutils-2.43.1-wqiqgjbqza7xkq3qqwofkejr3l76yrox/bin/ld: src.cxx:(.text+0x34): undefined reference to `pthread_cancel'
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/binutils-2.43.1-wqiqgjbqza7xkq3qqwofkejr3l76yrox/bin/ld: src.cxx:(.text+0x41): undefined reference to `pthread_join'
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/binutils-2.43.1-wqiqgjbqza7xkq3qqwofkejr3l76yrox/bin/ld: src.cxx:(.text+0x50): undefined reference to `pthread_atfork'
+        clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+        gmake[1]: *** [CMakeFiles/cmTC_de152.dir/build.make:100: cmTC_de152] Error 1
+        gmake[1]: Leaving directory '/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-YahNnT'
+        gmake: *** [Makefile:127: cmTC_de152/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "CMakeLists.txt:14 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-u7ZgD9"
+      binary: "/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-u7ZgD9"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-u7ZgD9'
+        
+        Run Build Command(s): /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/bin/cmake -E env VERBOSE=1 /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gmake-4.4.1-eynjberzbesr5g7qmzjc3x5wfy2ryasb/bin/gmake -f Makefile cmTC_170a3/fast
+        /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gmake-4.4.1-eynjberzbesr5g7qmzjc3x5wfy2ryasb/bin/gmake  -f CMakeFiles/cmTC_170a3.dir/build.make CMakeFiles/cmTC_170a3.dir/build
+        gmake[1]: Entering directory '/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-u7ZgD9'
+        Building CXX object CMakeFiles/cmTC_170a3.dir/CheckFunctionExists.cxx.o
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++   -DCHECK_FUNCTION_EXISTS=pthread_create -std=gnu++17 -MD -MT CMakeFiles/cmTC_170a3.dir/CheckFunctionExists.cxx.o -MF CMakeFiles/cmTC_170a3.dir/CheckFunctionExists.cxx.o.d -o CMakeFiles/cmTC_170a3.dir/CheckFunctionExists.cxx.o -c /home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-u7ZgD9/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_170a3
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/bin/cmake -E cmake_link_script CMakeFiles/cmTC_170a3.dir/link.txt --verbose=1
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_170a3.dir/CheckFunctionExists.cxx.o -o cmTC_170a3  -lpthreads
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/binutils-2.43.1-wqiqgjbqza7xkq3qqwofkejr3l76yrox/bin/ld: cannot find -lpthreads: No such file or directory
+        clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+        gmake[1]: *** [CMakeFiles/cmTC_170a3.dir/build.make:100: cmTC_170a3] Error 1
+        gmake[1]: Leaving directory '/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-u7ZgD9'
+        gmake: *** [Makefile:127: cmTC_170a3/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "CMakeLists.txt:14 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-iwmxFq"
+      binary: "/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-iwmxFq"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-iwmxFq'
+        
+        Run Build Command(s): /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/bin/cmake -E env VERBOSE=1 /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gmake-4.4.1-eynjberzbesr5g7qmzjc3x5wfy2ryasb/bin/gmake -f Makefile cmTC_cfb31/fast
+        /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gmake-4.4.1-eynjberzbesr5g7qmzjc3x5wfy2ryasb/bin/gmake  -f CMakeFiles/cmTC_cfb31.dir/build.make CMakeFiles/cmTC_cfb31.dir/build
+        gmake[1]: Entering directory '/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-iwmxFq'
+        Building CXX object CMakeFiles/cmTC_cfb31.dir/CheckFunctionExists.cxx.o
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++   -DCHECK_FUNCTION_EXISTS=pthread_create -std=gnu++17 -MD -MT CMakeFiles/cmTC_cfb31.dir/CheckFunctionExists.cxx.o -MF CMakeFiles/cmTC_cfb31.dir/CheckFunctionExists.cxx.o.d -o CMakeFiles/cmTC_cfb31.dir/CheckFunctionExists.cxx.o -c /home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-iwmxFq/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_cfb31
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cfb31.dir/link.txt --verbose=1
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_cfb31.dir/CheckFunctionExists.cxx.o -o cmTC_cfb31  -lpthread
+        gmake[1]: Leaving directory '/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-iwmxFq'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/FindOpenMP.cmake:238 (try_compile)"
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/FindOpenMP.cmake:506 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:18 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-e8UVFI"
+      binary: "/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-e8UVFI"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmplibomp"
+      cached: true
+      stdout: |
+        Change Dir: '/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-e8UVFI'
+        
+        Run Build Command(s): /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/bin/cmake -E env VERBOSE=1 /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gmake-4.4.1-eynjberzbesr5g7qmzjc3x5wfy2ryasb/bin/gmake -f Makefile cmTC_b3aed/fast
+        /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gmake-4.4.1-eynjberzbesr5g7qmzjc3x5wfy2ryasb/bin/gmake  -f CMakeFiles/cmTC_b3aed.dir/build.make CMakeFiles/cmTC_b3aed.dir/build
+        gmake[1]: Entering directory '/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-e8UVFI'
+        Building CXX object CMakeFiles/cmTC_b3aed.dir/OpenMPTryFlag.cpp.o
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++   -fopenmp=libomp -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_b3aed.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_b3aed.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_b3aed.dir/OpenMPTryFlag.cpp.o -c /home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-e8UVFI/OpenMPTryFlag.cpp
+        clang version 17.0.6
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin
+        Configuration file: /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++.cfg
+        Selected GCC installation: /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+        Found CUDA installation: /usr/local/cuda-12.3, version 
+         (in-process)
+         "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang-17" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-e8UVFI -resource-dir /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17 -dependency-file CMakeFiles/cmTC_b3aed.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_b3aed.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0 -internal-isystem /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/x86_64-pc-linux-gnu -internal-isystem /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/backward -internal-isystem /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -std=gnu++17 -fdeprecated-macro -fdebug-compilation-dir=/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-e8UVFI -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b3aed.dir/OpenMPTryFlag.cpp.o -x c++ /home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-e8UVFI/OpenMPTryFlag.cpp
+        clang -cc1 version 17.0.6 based upon LLVM 17.0.6 default target x86_64-unknown-linux-gnu
+        ignoring nonexistent directory "/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../x86_64-pc-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0
+         /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/x86_64-pc-linux-gnu
+         /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/backward
+         /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        Linking CXX executable cmTC_b3aed
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b3aed.dir/link.txt --verbose=1
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++  -fopenmp=libomp -v CMakeFiles/cmTC_b3aed.dir/OpenMPTryFlag.cpp.o -o cmTC_b3aed  -v
+        clang version 17.0.6
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin
+        Configuration file: /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++.cfg
+        Selected GCC installation: /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+        Found CUDA installation: /usr/local/cuda-12.3, version 
+         "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/binutils-2.43.1-wqiqgjbqza7xkq3qqwofkejr3l76yrox/bin/ld" -pie --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b3aed /lib/../lib64/Scrt1.o /lib/../lib64/crti.o /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtbeginS.o -L/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/../lib/x86_64-unknown-linux-gnu -L/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/lib/x86_64-unknown-linux-gnu -L/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0 -L/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_b3aed.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lomp -L/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtendS.o /lib/../lib64/crtn.o
+        gmake[1]: Leaving directory '/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-e8UVFI'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/FindOpenMP.cmake:282 (message)"
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/FindOpenMP.cmake:506 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:18 (find_package)"
+    message: |
+      Parsed CXX OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-e8UVFI']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/bin/cmake -E env VERBOSE=1 /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gmake-4.4.1-eynjberzbesr5g7qmzjc3x5wfy2ryasb/bin/gmake -f Makefile cmTC_b3aed/fast]
+        ignore line: [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gmake-4.4.1-eynjberzbesr5g7qmzjc3x5wfy2ryasb/bin/gmake  -f CMakeFiles/cmTC_b3aed.dir/build.make CMakeFiles/cmTC_b3aed.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-e8UVFI']
+        ignore line: [Building CXX object CMakeFiles/cmTC_b3aed.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++   -fopenmp=libomp -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_b3aed.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_b3aed.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_b3aed.dir/OpenMPTryFlag.cpp.o -c /home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-e8UVFI/OpenMPTryFlag.cpp]
+        ignore line: [clang version 17.0.6]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin]
+        ignore line: [Configuration file: /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++.cfg]
+        ignore line: [Selected GCC installation: /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found CUDA installation: /usr/local/cuda-12.3  version ]
+        ignore line: [ (in-process)]
+        ignore line: [ "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang-17" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-e8UVFI -resource-dir /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17 -dependency-file CMakeFiles/cmTC_b3aed.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_b3aed.dir/OpenMPTryFlag.cpp.o -sys-header-deps -internal-isystem /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0 -internal-isystem /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/x86_64-pc-linux-gnu -internal-isystem /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/backward -internal-isystem /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -std=gnu++17 -fdeprecated-macro -fdebug-compilation-dir=/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-e8UVFI -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b3aed.dir/OpenMPTryFlag.cpp.o -x c++ /home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-e8UVFI/OpenMPTryFlag.cpp]
+        ignore line: [clang -cc1 version 17.0.6 based upon LLVM 17.0.6 default target x86_64-unknown-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0]
+        ignore line: [ /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/x86_64-pc-linux-gnu]
+        ignore line: [ /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../include/c++/9.5.0/backward]
+        ignore line: [ /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_b3aed]
+        ignore line: [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b3aed.dir/link.txt --verbose=1]
+        ignore line: [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++  -fopenmp=libomp -v CMakeFiles/cmTC_b3aed.dir/OpenMPTryFlag.cpp.o -o cmTC_b3aed  -v]
+        ignore line: [clang version 17.0.6]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin]
+        ignore line: [Configuration file: /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++.cfg]
+        ignore line: [Selected GCC installation: /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found CUDA installation: /usr/local/cuda-12.3  version ]
+        link line: [ "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/binutils-2.43.1-wqiqgjbqza7xkq3qqwofkejr3l76yrox/bin/ld" -pie --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b3aed /lib/../lib64/Scrt1.o /lib/../lib64/crti.o /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtbeginS.o -L/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/../lib/x86_64-unknown-linux-gnu -L/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/lib/x86_64-unknown-linux-gnu -L/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0 -L/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_b3aed.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lomp -L/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/crtendS.o /lib/../lib64/crtn.o]
+          arg [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/binutils-2.43.1-wqiqgjbqza7xkq3qqwofkejr3l76yrox/bin/ld] ==> ignore
+          arg [-pie] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_b3aed] ==> ignore
+          arg [-L/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/../lib/x86_64-unknown-linux-gnu] ==> dir [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/../lib/x86_64-unknown-linux-gnu]
+          arg [-L/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/lib/x86_64-unknown-linux-gnu] ==> dir [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/lib/x86_64-unknown-linux-gnu]
+          arg [-L/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0] ==> dir [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0]
+          arg [-L/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64] ==> dir [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_b3aed.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lomp] ==> lib [omp]
+          arg [-L/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib] ==> dir [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+        collapse library dir [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/../lib/x86_64-unknown-linux-gnu] ==> [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/x86_64-unknown-linux-gnu]
+        collapse library dir [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/lib/x86_64-unknown-linux-gnu] ==> [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/lib/x86_64-unknown-linux-gnu]
+        collapse library dir [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0] ==> [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0]
+        collapse library dir [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0/../../../../lib64] ==> [/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        collapse library dir [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib] ==> [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib]
+        implicit libs: [stdc++;m;omp;gcc_s;gcc;pthread;c;gcc_s;gcc]
+        implicit objs: []
+        implicit dirs: [/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/x86_64-unknown-linux-gnu;/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib/clang/17/lib/x86_64-unknown-linux-gnu;/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib/gcc/x86_64-pc-linux-gnu/9.5.0;/home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gcc-9.5.0-efwq26hlql5txdapzxsxx42uc2bbnloq/lib64;/lib64;/usr/lib64;/lib;/usr/lib;/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/FindOpenMP.cmake:440 (try_compile)"
+      - "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/share/cmake-3.30/Modules/FindOpenMP.cmake:580 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:18 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-k04RU1"
+      binary: "/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-k04RU1"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: '/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-k04RU1'
+        
+        Run Build Command(s): /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/bin/cmake -E env VERBOSE=1 /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gmake-4.4.1-eynjberzbesr5g7qmzjc3x5wfy2ryasb/bin/gmake -f Makefile cmTC_bdf8b/fast
+        /home/hemali/spack/opt/spack/linux-centos7-haswell/gcc-4.8.5/gmake-4.4.1-eynjberzbesr5g7qmzjc3x5wfy2ryasb/bin/gmake  -f CMakeFiles/cmTC_bdf8b.dir/build.make CMakeFiles/cmTC_bdf8b.dir/build
+        gmake[1]: Entering directory '/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-k04RU1'
+        Building CXX object CMakeFiles/cmTC_bdf8b.dir/OpenMPCheckVersion.cpp.o
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++   -fopenmp=libomp -std=gnu++17 -MD -MT CMakeFiles/cmTC_bdf8b.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_bdf8b.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_bdf8b.dir/OpenMPCheckVersion.cpp.o -c /home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-k04RU1/OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_bdf8b
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/cmake-3.30.5-x5lqywsrockqp4pk6xpny75qr5ebyo4y/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bdf8b.dir/link.txt --verbose=1
+        /home/hemali/spack/opt/spack/linux-centos7-skylake_avx512/gcc-9.5.0/llvm-17.0.6-ia3olxfimra4l74edxxlmwptqf52kq2h/bin/clang++  -fopenmp=libomp CMakeFiles/cmTC_bdf8b.dir/OpenMPCheckVersion.cpp.o -o cmTC_bdf8b
+        gmake[1]: Leaving directory '/home/hemali/rooflineadvisor/roofline-advisor/build/CMakeFiles/CMakeScratch/TryCompile-k04RU1'
+        
+      exitCode: 0
+...
