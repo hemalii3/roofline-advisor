@@ -6,6 +6,8 @@ those predictions against real pSTL-Bench measurements on a Tesla
 V100-PCIe-32GB and a 64-core CPU node (exa03, University of Vienna
 scientific computing cluster).
 
+![Roofline: predicted vs actual](docs/roofline.png)
+
 This is a follow-on to an earlier project extending pSTL-Bench with a SYCL
 backend (see "Background" below). That work found that GPU offload
 profitability seemed to hinge on a kernel's arithmetic intensity. This
