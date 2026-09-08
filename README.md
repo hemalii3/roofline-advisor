@@ -102,7 +102,7 @@ count):**
 | sort | never crosses | always crosses (n~1000) | **GPU wins** (2.30 vs 1.83 GB/s at n=268M) |
 | inc_scan | never crosses | always crosses (n~1000) | GPU loses (7.2 vs 28.5 GB/s) |
 
-## The core finding
+## core finding
 
 Neither model variant matches reality on its own:
 - The **naive** model is too pessimistic — it predicts GPU offload never
@@ -129,76 +129,3 @@ model needs an empirically-derived efficiency/overhead correction term
 alongside the pure hardware roofline — pure peak-performance reasoning
 systematically over- or under-predicts depending on which transfer
 assumption is used.
-
-## Reproducing
-
-```bash
-mkdir build && cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release
-make -j
-cd ..
-
-# Hardware characterization
-./build/benchmarks/compute_bound $(nproc)
-bash scripts/sweep_bandwidth.sh build $(nproc)
-# fill data/devices.csv with results (already populated with exa03 numbers)
-
-# Kernel characterization -- see docs/kernel_profiles.md, fill data/kernels.csv
-
-# Prediction
-./build/src/predict data/devices.csv data/kernels.csv roofline_predictions.csv 10
-
-# Validation against real pSTL-Bench results
-python3 scripts/extract_pstlbench.py ~/results --out master_results.csv
-python3 scripts/build_actual_results.py --master master_results.csv \
-    --kernels data/kernels.csv --out actual_results.csv
-
-# Figure
-python3 scripts/plot_roofline.py --actual actual_results.csv --out docs/roofline.png
-```
-
-## Project structure
-
-```
-include/roofline/
-  timer.hpp    -- benchmark timing/reporting helpers
-  dnb.hpp       -- "do not optimize away" helper for micro-benchmarks
-  model.hpp      -- roofline model: Device, KernelProfile, naive + amortized crossover search
-benchmarks/
-  compute_bound.cpp   -- measures peak GFLOP/s (horizontal roofline)
-  bandwidth_bound.cpp -- measures peak GB/s via STREAM triad (diagonal roofline)
-src/
-  predict.cpp   -- loads device + kernel data, prints/exports predictions (both model variants)
-data/
-  devices.csv   -- measured device roofline parameters (populated: exa03 CPU + V100-PCIe-32GB)
-  kernels.csv   -- derived per-algorithm arithmetic intensity
-scripts/
-  extract_pstlbench.py     -- flattens raw pSTL-Bench Google Benchmark JSON into one CSV
-  build_actual_results.py  -- turns flattened results into predicted-vs-actual comparison format
-  plot_roofline.py         -- renders the headline predicted-vs-actual roofline figure
-  sweep_bandwidth.sh       -- sweeps bandwidth_bound across sizes to find the DRAM plateau
-docs/
-  kernel_profiles.md  -- FLOPs/bytes accounting convention per algorithm, incl. find's
-                          early-termination problem (open item)
-```
-
-## Open items / future work
-
-- **`find`'s arithmetic intensity** is still a placeholder (0 FLOP/byte).
-  Its data-dependent early termination means a single scalar AI doesn't
-  really describe it — see `docs/kernel_profiles.md` for the two
-  candidate conventions (worst-case scan vs. expected-case with match
-  position). Worth a paragraph of discussion even without a final number.
-- **An efficiency/overhead correction term**, derived empirically from
-  the ratio of achieved-to-roofline-predicted performance per kernel,
-  would let the model bridge the naive/amortized gap directly rather than
-  just bracketing it. This connects naturally to the planned follow-on
-  work on automatic data-movement-strategy selection (pinned vs. managed
-  vs. zero-copy USM), since both projects are really asking the same
-  underlying question: what determines *actual* achieved performance,
-  beyond the theoretical ceiling.
-- GPU device row currently uses NVIDIA's published spec-sheet peak
-  (7000 GFLOP/s FP64, 900 GB/s) rather than a directly measured value —
-  porting `compute_bound`/`bandwidth_bound` to SYCL would let the GPU row
-  be measured the same way the CPU row was, rather than taken from a
-  datasheet.
